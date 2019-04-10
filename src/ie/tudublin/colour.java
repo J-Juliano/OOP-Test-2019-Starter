@@ -11,7 +11,7 @@ import processing.data.TableRow;
 
 public class colour 
 {
-    private String color; 
+    private String colour; 
     public int r;
     public int g;
     public int b;
@@ -19,47 +19,46 @@ public class colour
 
 
     //accessor methods
-    public void setDisplayName(String color)
+    public void setDisplayName(String colour)
     {
-        this.color = color;
+        this.colour = colour;
     }
 
     public String getDisplayName()
     {
-        return color;
+        return colour;
     }
 
     //Converts data to string
     public String toString()
     {
-        return color + "\t" + r + "\t" + g + "\t" + b + "/t" + value; 
+        return colour + "\t" + r + "\t" + g + "\t" + b + "/t" + value; 
     }
 
     //Constructor - A special Method that gets called when the object is created
     public colour(TableRow row)
     {
-        //Assigns private fields
-        //Header Case Sensitive
-        color = row.getString("Colour");
-        r = row.getInt("R");
-        g = row.getInt("G");
-        b = row.getInt("B");
-        value = row.getInt("Value");
+        
+        colour = row.getString("colour");
+        r = row.getInt("r");
+        g = row.getInt("g");
+        b = row.getInt("b");
+        value = row.getInt("value");
         
     }
 
     /**
-     * @return the color
+     * @return the colour
      */
-    public String getColor() {
-        return color;
+    public String getColour() {
+        return colour;
     }
 
     /**
-     * @param color the color to set
+     * @param colour the colour to set
      */
-    public void setColor(String color) {
-        this.color = color;
+    public void setColour(String colour) {
+        this.colour = colour;
     }
 
     /**
@@ -112,9 +111,10 @@ public class colour
     }
 
     /**
-     * @param value the value to set
-     */
-    public void setValue(int value) {
-        this.value = value;
-    }
-}
+	 * @param value the value to set
+	 */
+	public void setValue(int value) {
+		this.value = value;
+	}
+
+    
