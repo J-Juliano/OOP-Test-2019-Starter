@@ -21,9 +21,8 @@ public class Resistors
 public resistors(TableRow row)
 {
    //Constructor
-    value = row.getString("Value");
-    ones = row.getInt("Ones");
-    tens = row.getInt("Tens");
-    hundreds = row.getInt("Hundreds");
-     
+    value = row.getInt("value");
+    ones = row.getInt("ones");
+    tens = row.getInt("tens");
+    hundreds = row.getInt("hundreds");    
 }
